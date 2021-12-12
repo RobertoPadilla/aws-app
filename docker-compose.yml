@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  apache-php:
+    container_name: "php-8.1"
+    build: .
+    image: "php-8.1-image"
+    volumes:
+      - ./:/var/www/crud
+    ports:
+      - 80:80
